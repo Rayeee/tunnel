@@ -8,10 +8,7 @@
         <format>zip</format>
     </formats>
     <fileSets>
-        <fileSet>
-            <directory>src/main/resources/configs/${env}/</directory>
-            <outputDirectory>conf</outputDirectory>
-        </fileSet>
+
         <fileSet>
             <directory>src/main/resources/</directory>
             <outputDirectory>conf/</outputDirectory>
@@ -27,17 +24,6 @@
         </fileSet>
     </fileSets>
 
-    <files>
-        <file>
-            <source>conf/logrotate</source>
-            <outputDirectory>/</outputDirectory>
-        </file>
-        <file>
-            <source>bin/check.sh</source>
-            <outputDirectory>/</outputDirectory>
-            <fileMode>755</fileMode>
-        </file>
-    </files>
 
     <dependencySets>
         <dependencySet>
